@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  sbt:
+    build: ./docker/sbt
+    image: slackerwx/sbt_alpine:pre-compiled
+    volumes:
+      - $PWD:/src
